@@ -18,7 +18,9 @@ This repository aims to faciliate the manual labeling of image data. In particul
 - Output is hard coded to save as follows: labels_[unique labeler ID].csv, where the ID is taken from the ID column in "directories.csv"
 
 ## How to Use
-1. Run app.R. This can be done at the user's discretion. For example, one can run it through RStudio directly by opening the file in Rstudio, highlighting the code, and running the selected lines or clicking on "Run App" in the upper right corner of the script box. Alternatively, one can run it through a terminal by navigating to the directory in which it is located and running: Rscript -e 'library(methods); shiny::runApp(launch.browser = F)'
+1. Run app.R. This can be done at the user's discretion. Two examples are provided here:
+    - One can run it through RStudio directly by opening the file in Rstudio, highlighting the code, and running the selected lines or clicking on "Run App" in the upper right corner of the script box.
+    - Alternatively, one can run it through a terminal by navigating to the directory in which it is located and running: Rscript -e 'library(methods); shiny::runApp(launch.browser = F)'. Afterwards, copy and paste the resulting address (e.g., http://127.0.0.1:4686) into a browser (so far only tested with Chrome)
 2. Once prompted, choose cnetID and wait until first image loads
 3. Provide responses in the left panel and hit "Next Image" when complete. Once a new image loads, you can be sure the response was recorded.
 4. **You may close the application at any time and your progress will be saved.** To close, simply exit the R pop-up window or browser tab
