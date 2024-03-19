@@ -9,7 +9,7 @@ This repository aims to faciliate the manual labeling of image data. In particul
 
 ## Directory Set Up 
 - Create "assignments.csv" file where each row corresponds to an image and at least one column contains the image path
-- Create "directories.csv" where each row corresponds to an individual labeler. This should contain to columns: 1. a unique labeler ID and 2. their local path to the directory containing the images.
+- Create "directories.csv" where each row corresponds to an individual labeler. This should contain two columns: 1) a unique labeler ID and 2) their local path to the directory containing the images.
 - Download the app.R script and place in the same directory as the above two files
 
 ## Customizing the Shiny App
