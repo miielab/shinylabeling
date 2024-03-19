@@ -14,10 +14,11 @@ This repository aims to faciliate the manual labeling of image data. In particul
 
 ## Customizing the Shiny App
 - To change the user interface, you can add or remove questions in the "ui" portion of the code. The first value in a ui function, e.g., "selectInput()" or "checkboxGroupInput()", is the "id" of that input. If inputs are changed, the corresponding part of the server that processes that input will also need changing.
-    - For example, suppose you added a new ui input with the id "clothing." The server code that writes responses to the csv, i.e., the first chunk of the code in the eventReactive "ntext <- eventReactive(input$goButton,{...", will need to be changed so that the new ui input is written to a cell in addition to the existing responses, e.g., clothing = input$cothing. 
+    - For example, suppose you added a new ui input with the id "clothing." The server code that writes responses to the csv, i.e., the first chunk of the code in the eventReactive "ntext <- eventReactive(input$goButton,{...", will need to be changed so that the new ui input is written to a cell in addition to the existing responses, e.g., clothing = input$cothing.
+- Output is hard coded to save as follows: labels_[unique labeler ID].csv, where the ID is taken from the ID column in "directories.csv"
 
 ## How to Use
-1. Open \[Your Midway Path\]/miie/supplemental_data/manual_coding/faces/Spring 2024/app.R 
+1. Open \[Path to Directory\]/app.R 
     - This can be done by opening a file browser and navigating to the directory or opening the file directly through RStudio 
 2. Run app.R in RStudio by highlighting the code and running the selected lines or clicking on "Run App" in the upper right corner of the script quadrant.
 3. Once prompted, choose cnetID and wait until first image loads
