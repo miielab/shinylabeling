@@ -14,7 +14,7 @@ This repository aims to faciliate the manual labeling of image data. In particul
     - This can be done by opening a file browser and navigating to the directory or opening the file directly through RStudio 
 3. Run app.R in RStudio by highlighting the code and running the selected lines or clicking on "Run App" in the upper right corner of the script quadrant.
 4. Once prompted, choose cnetID and wait until first image loads
-5. Provide responses in the left panel and hit "Next Image" when complete. Once a new image loads, you can be sure your prior resposnes were recorded.
+5. Provide responses in the left panel and hit "Next Image" when complete. Once a new image loads, you can be sure the response was recorded.
 6. **You may close the application at any time and your progress will be saved.** To close, simply exit the R pop-up window or browser tab
 
 ## Notes
