@@ -5,7 +5,7 @@ This repository aims to faciliate the manual labeling of image data. In particul
 
 ## Requirements
 - [RStudio](https://posit.co/download/rstudio-desktop/)
-    - Required packages: "rstudioapi", "shiny", "shinydashboard", "shinyjs", "shinyalert", "shinyWidgets", "DT", "dplyr"
+    - Required packages: "this.path", "shiny", "shinydashboard", "shinyjs", "shinyalert", "shinyWidgets", "DT", "dplyr"
 
 ## Directory Set Up 
 - Create "assignments.csv" file where each row corresponds to an image and at least one column contains the image path
