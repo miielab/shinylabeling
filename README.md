@@ -8,12 +8,13 @@ This repository aims to faciliate the manual labeling of image data. In particul
     - Required packages: "rstudioapi", "shiny", "shinydashboard", "shinyjs", "shinyalert", "shinyWidgets", "DT", "dplyr"
 
 ## Directory Set Up 
-- Create "assignments.csv" file where each row corresponds to an image and at least one column contains the path of the image
+- Create "assignments.csv" file where each row corresponds to an image and at least one column contains the image path
 - Create "directories.csv" where each row corresponds to an individual labeler. This should contain to columns: 1. a unique labeler ID and 2. their local path to the directory containing the images.
 - Download the app.R script and place in the same directory as the above two files
 
 ## Customizing the Shiny App
-- To change the user interface, you can add or remove questions in the "ui" portion of the code. The first 
+- To change the user interface, you can add or remove questions in the "ui" portion of the code. The first value in a ui function, e.g., "selectInput()" or "checkboxGroupInput()", is the "id" of that input. If inputs are changed, the corresponding part of the server that processes that input will also need changing.
+    - For example, suppose you added a new ui input with the id "clothing." The server code that writes responses to the csv, i.e., the first chunk of the code in the eventReactive "ntext <- eventReactive(input$goButton,{...", will need to be changed so that the new ui input is written to a cell in addition to the existing responses, e.g., clothing = input$cothing. 
 
 ## How to Use
 1. Open \[Your Midway Path\]/miie/supplemental_data/manual_coding/faces/Spring 2024/app.R 
