@@ -4,18 +4,24 @@
 This repository aims to faciliate the manual labeling of image data. In particular, it contains R code to run a Shiny application which sequentially displays images and asks/collects user responses about them. Note: this repo is not monitored.
 
 ## Requirements
-- Mapped Midway Drive. See [here](https://rcc-uchicago.github.io/user-guide/samba/#__tabbed_1_1) for instructions.
 - [RStudio](https://posit.co/download/rstudio-desktop/)
     - Required packages: "rstudioapi", "shiny", "shinydashboard", "shinyjs", "shinyalert", "shinyWidgets", "DT", "dplyr"
 
+## Directory Set Up 
+- Create "assignments.csv" file where each row corresponds to an image and at least one column contains the path of the image
+- Create "directories.csv" where each row corresponds to an individual labeler. This should contain to columns: 1. a unique labeler ID and 2. their local path to the directory containing the images.
+- Download the app.R script and place in the same directory as the above two files
+
+## Customizing the Shiny App
+- To change the user interface, you can add or remove questions in the "ui" portion of the code. The first 
+
 ## How to Use
-1. Map Midway Drive. See [here](https://rcc-uchicago.github.io/user-guide/samba/#__tabbed_1_1) for instructions.
-2. Open \[Your Midway Path\]/miie/supplemental_data/manual_coding/faces/Spring 2024/app.R 
+1. Open \[Your Midway Path\]/miie/supplemental_data/manual_coding/faces/Spring 2024/app.R 
     - This can be done by opening a file browser and navigating to the directory or opening the file directly through RStudio 
-3. Run app.R in RStudio by highlighting the code and running the selected lines or clicking on "Run App" in the upper right corner of the script quadrant.
-4. Once prompted, choose cnetID and wait until first image loads
-5. Provide responses in the left panel and hit "Next Image" when complete. Once a new image loads, you can be sure the response was recorded.
-6. **You may close the application at any time and your progress will be saved.** To close, simply exit the R pop-up window or browser tab
+2. Run app.R in RStudio by highlighting the code and running the selected lines or clicking on "Run App" in the upper right corner of the script quadrant.
+3. Once prompted, choose cnetID and wait until first image loads
+4. Provide responses in the left panel and hit "Next Image" when complete. Once a new image loads, you can be sure the response was recorded.
+5. **You may close the application at any time and your progress will be saved.** To close, simply exit the R pop-up window or browser tab
 
 ## Notes
 - The application opens initially in a R pop-up window, but you may open the program in a browser using the "Open in Browser" option at the top of the window
