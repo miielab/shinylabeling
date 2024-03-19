@@ -26,7 +26,7 @@ This repository aims to faciliate the manual labeling of image data. In particul
 4. **You may close the application at any time and your progress will be saved.** To close, simply exit the R pop-up window or browser tab
 
 ## Notes
-- The application opens initially in a R pop-up window, but you may open the program in a browser using the "Open in Browser" option at the top of the window
+- When running the Shiny App directly through RStudio, the application initially opens in a R pop-up window, but you may open the program in a browser using the "Open in Browser" option at the top of the window
 - Your file will be saved as "labels_[cnetID].csv" in the same directory as the R script 
 - **In case of mislabel**: You can open up the "labels_[cnetID].csv" file in Excel and delete any rows where something was mislabeled
 - Sometimes the images load slowly, I am unsure why this is at the moment and have only noticed this behavior on Windows OS.
