@@ -1,7 +1,7 @@
 # Manual-Labeling
 
 ## Overview
-This repository aims to faciliate the manual labeling of image data. In particular, it contains R code to run a Shiny application which sequentially displays images and asks/collects user responses about them.
+This repository aims to faciliate the manual labeling of image data. In particular, it contains R code to run a Shiny application which sequentially displays images and asks/collects user responses about them. Note: this repo is not monitored.
 
 ## Requirements
 - Mapped Midway Drive. See [here](https://rcc-uchicago.github.io/user-guide/samba/#__tabbed_1_1) for instructions.
